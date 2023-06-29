@@ -1,26 +1,25 @@
-
 <!DOCTYPE html>
-<html> _ _
-<头>
-    <元字符集= “UTF-8” >
-    <标题>很棒的pyecharts </标题>
-                <脚本类型= “text/javascript”  src = “https://assets.pyecharts.org/assets/v5/echarts.min.js” > </脚本>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
-</头>
-<正文>
-    < div id = "e5066350d4304b3fa1b77536c41a9cf4"  class = "图表容器"  style = "宽度：900 px；高度：500 px ；" > </ div >
-    <脚本>
-        var  Chart_e5066350d4304b3fa1b77536c41a9cf4 = echarts. 初始化（
-            文档。getElementById ( 'e5066350d4304b3fa1b77536c41a9cf4' ) , 'light' , {渲染器: 'canvas' } ) ;
-        var  option_e5066350d4304b3fa1b77536c41a9cf4 = {
-    “基本选项”：{
-
+</head>
+<body >
+    <div id="e5066350d4304b3fa1b77536c41a9cf4" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_e5066350d4304b3fa1b77536c41a9cf4 = echarts.init(
+            document.getElementById('e5066350d4304b3fa1b77536c41a9cf4'), 'light', {renderer: 'canvas'});
+        var option_e5066350d4304b3fa1b77536c41a9cf4 = {
+    "baseOption": {
+        "series": [
             {
-                “类型”：“酒吧”，
-“名称”：“GDP（ \u4ebf ）”，
-                “legendHoverLink”：true，
-
-                    20035.8 ,
+                "type": "bar",
+                "name": "GDP(\u4ebf)",
+                "legendHoverLink": true,
+                "data": [
+                    20035.8,
                     27155.2,
                     28291.1,
                     28689.3,
@@ -30,10 +29,10 @@
                     214332.0
                 ],
                 "realtimeSort": false,
-                “显示背景”：假，"showBackground": false,
-                "stackStrategy": "samesign","stackStrategy": "samesign",
-                “光标”：“指针”，"cursor": "pointer",
-                "barMinHeight": 0,"barMinHeight": 0,
+                "showBackground": false,
+                "stackStrategy": "samesign",
+                "cursor": "pointer",
+                "barMinHeight": 0,
                 "barCategoryGap": "20%",
                 "barGap": "30%",
                 "large": false,
@@ -12521,5 +12520,3 @@
     </script>
 </body>
 </html>
-
-
